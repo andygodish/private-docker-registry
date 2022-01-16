@@ -1,7 +1,8 @@
 #!bin/bash
 
-set -e 
+set -e
 
-SKIP_IMAGES_DL=${SKIP_IMAGES_DL:-'false'}
+SKIP_IMAGES_DL=${1:-'false'}
 
 echo $SKIP_IMAGES_DL
+
