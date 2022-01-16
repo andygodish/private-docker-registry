@@ -21,7 +21,7 @@ SKIP_IMAGES_DL=${SKIP_IMAGES_DL:-'false'}
 
 setup_env() {
 
-  INSTALL_RKE2_CHANNEL="stable"
+  INSTALL_RKE2_CHANNEL="stable" # https://update.rke2.io/v1-release/channels - for list of available releases
   INSTALL_RKE2_METHOD="yum"
   # --- bail if we are not root ---
   if [ ! $(id -u) -eq 0 ]; then
